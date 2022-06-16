@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Met Challenge</title>
+    <script src="js/main.js" type="module"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Find your favorite artist!</h1>
+    <form name="art">
+        <label for="q">Enter keyword search:</label>
+        <br/>
+        <input name="q" id="q" placeholder="sunflower" required></input>
+        <br/>
+        <br/>
+        <label for="isHighlight">Want only Highlight pieces?</label>
+        <br/>
+        <input type="radio" name="isHighlight" id="isHighlightYes" value="true" required>Yes</input>
+        <br/>
+        <input type="radio" name="isHighlight" id="isHighlightNo" value="false" required>No</input>
+        <br/>
+        <br/>
+        <label for="isOnView">Want only pieces that are on view in the museum?</label>
+        <br/>
+        <input type="radio" name="isOnView" id="isOnViewYes" value="true" required>Yes</input>
+        <br/>
+        <input type="radio" name="isOnView" id="isOnViewNo" value="false" required>No</input>
+        <br/>
+        <br/>
+        <label for="hasImages">Want only pieces that have images available online?</label>
+        <br/>
+        <input type="radio" name="hasImages" id="hasImagesYes" value="true" required>Yes</input>
+        <br/>
+        <input type="radio" name="hasImages" id="hasImagesNo" value="false" required>No</input>
+        <br/>
+        <br/>
+        <label for="department">Department:</label>
+        <select class="department-list" name="department" id="department">
+            <option value="Any">Any</option>
+        </select>
+        <br/>
+        <br/>
+        <input type="submit" id="artistButton" cale="Get Art">
+    </form>
+    <ul id="output"></ul>
+</body>
+</html>
